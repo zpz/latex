@@ -1,0 +1,59 @@
+% THIS FILE WAS AUTOMATICALLY GENERATED -- DO NOT EDIT
+
+%%AutoEnc_qxbrs6bugrd52jhmbgr5i3skuh
+% Encoding created by otftotfm on Tue Apr  4 12:26:28 2006
+% Command line follows encoding
+/AutoEnc_qxbrs6bugrd52jhmbgr5i3skuh [
+%00
+  /fi /Euro.fitted /ffi /fl /fraction /uniEFED /Hungarumlaut /uniEFF1
+  /ff /f_j /.notdef /T_h /ffl /f_f_j /.notdef /.notdef
+%10
+  /dotlessi /.notdef /Grave /Acute /Caron /uniEFEE /Macron /uniEFF3
+  /uniEFF2 /germandbls /ae /oe /oslash /AE /OE /Oslash
+%20
+  /space /exclam /quotedbl /numbersign /dollar /percent /ampersand /quoteright
+  /uniF6AE /uniF6AF /asterisk /plus /comma /uniF6BA /period /slash
+%30
+  /uniF639 /uniF6DC /uniF63A /uniF63B /uniF63C /uniF63D /uniF63E /uniF63F
+  /uniF640 /uniF641 /colon /semicolon /less /equal /greater /question
+%40
+  /uniF633 /A /B /C /D /E /F /G
+  /H /I /J /K /L /M /N /O
+%50
+  /P /Q /R /S /T /U /V /W
+  /X /Y /Z /uniF6B0 /backslash /uniF6B1 /uniEFF7 /underscore
+%60
+  /quoteleft /a /b /c /d /e /f /g
+  /h /i /j /k /l /m /n /o
+%70
+  /p /q /r /s /t /u /v /w
+  /x /y /z /uniF6B2 /bar /uniF6B3 /uniEFF5 /Dieresis
+%80
+  /Lslash /quotesingle /quotesinglbase /florin /quotedblbase /ellipsis /dagger /daggerdbl
+  /circumflex /perthousand /Scaron /uniF6B8 /OE /Zcaron /asciicircum /minus
+%90
+  /lslash /quoteleft /quoteright /quotedblleft /quotedblright /bullet /uniF6BB /uniF6BC
+  /tilde /trademark /scaron /uniF6B9 /oe /zcaron /asciitilde /Ydieresis
+%A0
+  /space /uniF6B4 /cent /sterling /currency /yen /brokenbar /section
+  /dieresis /copyright /ordfeminine /uniF6B6 /logicalnot /hyphen /registered /macron
+%B0
+  /degree /plusminus /twosuperior /threesuperior /acute /mu /paragraph /uniF6BD
+  /cedilla /onesuperior /ordmasculine /uniF6B7 /onequarter /onehalf /threequarters /uniF6B5
+%C0
+  /Agrave /Aacute /Acircumflex /Atilde /Adieresis /Aring /AE /Ccedilla
+  /Egrave /Eacute /Ecircumflex /Edieresis /Igrave /Iacute /Icircumflex /Idieresis
+%D0
+  /Eth /Ntilde /Ograve /Oacute /Ocircumflex /Otilde /Odieresis /multiply
+  /Oslash /Ugrave /Uacute /Ucircumflex /Udieresis /Yacute /Thorn /germandbls
+%E0
+  /agrave /aacute /acircumflex /atilde /adieresis /aring /ae /ccedilla
+  /egrave /eacute /ecircumflex /edieresis /igrave /iacute /icircumflex /idieresis
+%F0
+  /eth /ntilde /ograve /oacute /ocircumflex /otilde /odieresis /divide
+  /oslash /ugrave /uacute /ucircumflex /udieresis /yacute /thorn /ydieresis
+] def
+% Command line: 'otftotfm --encoding=ly1 --automatic
+% --map-file=AGaramondPro.map --coding-scheme=TEX TYPEWRITER AND WINDOWS
+% ANSI -fcase -fcpsp -fkern -fliga -flnum -fpnum AGaramondPro-Bold.otf
+% LY1--AGaramondPro-Bold--cpsp'

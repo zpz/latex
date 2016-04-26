@@ -1,0 +1,85 @@
+% Developed by Zepu Zhang.
+% This style should be used in a document of class 'beamer'.
+% It fixes some default settings for my own use.
+
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{techbeamer}[%
+    2007/01/27 Zepu Zhang customizations for the ``beamer'' class]
+
+% Choose themes. This should be set in the preamble of the document.
+% Some that I like:
+%\usetheme{CambridgeUS}
+%\usetheme{Boadilla}
+
+
+%==== Header and footer ====
+%
+% I have defined an outer theme called "zzinfolines."
+% Use
+%  \useoutertheme{zzinfolines}
+% after \usetheme{...}.
+
+
+%==== vertical alignment of materials on a slide ===
+%
+% By default, materials on a slide are vertically centered.
+% To make them start at the top, use the 't' class option:
+%
+% \documentclass[t]{beamer}
+%
+% Or, to change the alignment of a single frame, use
+%
+% \begin{frame}[t]
+% or
+% \begin{frame}[c]
+
+
+%==== using colors ====
+%
+% Use color syntax defined in the package "color":
+%
+% {\color{colorname} ... }
+%
+% Remember to use { and } to restrict its scope of impact.
+% Some common color names are predefined.
+% To define new color names.  Use
+%
+% \definecolor{colorname}{rgb}{r,g,b}
+%
+% Color works in math mode as well;
+% it's easy to make different parts of a formula
+% in different colors.
+
+
+%==== movies, animations, and sound ====
+%
+% We usually want to play animations or sounds "on the spot"
+% instead of opening another program.
+%
+% Use the 'multimedia' package which is part of the
+% 'beamer' distribution but must be explicitly loaded.
+% Then use the \movie command.
+%
+% I have noticed that \movie does not recognize
+% the 'MP4' file format. There may be other problems.
+%
+% If \movie fails, try the 'movie15' package.
+
+
+%==== links to external files ====
+%
+% Use
+%
+% \href{URL}{text}
+%
+% from the "hyperref" package.
+% "URL" is either a full URL or relative to the base URL defined by
+%
+% \hyperbaseurl{}
+%
+% "text" is the clickable appearrance of the link.
+% It can be text, pictures, or whatever.
+%
+% The PDF viewer will open up the default program to show (or play)
+% the external file:
+

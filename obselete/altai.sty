@@ -1,0 +1,235 @@
+% Developed by Zepu Zhang
+% December 16, 2005
+% Use with 'seminar' document class.
+
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{altai}%
+    [2005/12/16 v0.01 A package 
+    customizing the 'seminar' document class for personal use]
+\typeout{`altai' style for technical presentations ---}
+\typeout{}
+
+%%%
+% Declare options
+%
+\newif\ifprinthandout
+\printhandoutfalse
+\DeclareOption{handout}{\printhandouttrue}
+\ProcessOptions\relax
+
+%%%
+% Load packages
+%
+\RequirePackage{semcolor,semlayer}
+\RequirePackage{color}
+\RequirePackage{pstricks}
+\RequirePackage{pslatex}
+\RequirePackage[dvips]{graphicx}
+\RequirePackage[bookmarks,%
+                pdffitwindow=true,%
+                pdfcenterwindow=true,%
+                pdfstartview=Fit]{hyperref}
+%\RequirePackage{semhelv}
+\RequirePackage{amsmath, amssymb}
+\RequirePackage{calc}
+\RequirePackage{pifont}
+\input{seminar.bug}
+\input{seminar.bg2}
+
+
+%%%%%% OVERALL LAYOUT CONCERNS %%%%%%
+
+% Usually, use US-letter paper in landscape orientation,
+% start the source file with
+%
+%  \documentclass[letter]{seminar}
+%  \usepackage{altai}
+%
+%  \special{papersize=11in,8.5in}
+%  \AtBeginDvi{\pdfmark{pdfmark=/PAGES, Raw={/Rotate -90}}}
+%
+% where 'letter' is default and hence unnecessary.
+
+% Set for letter paper. 
+% Make adjustments if other paper sizes are used.
+\ifprinthandout
+    \renewcommand\slideleftmargin{1.2in}  % default margins are 0.5in
+    \renewcommand\sliderightmargin{1.2in}
+    \setlength\slidewidth{8.6in}
+    \renewcommand\slidetopmargin{1.2in}
+    \renewcommand\slidebottommargin{1.3in}
+    \setlength\slideheight{6.0in}
+    \renewcommand\slideskip{0.05}
+    \renewcommand\slideshrink{0.95}
+    \slidesmag{4}
+\else
+    \renewcommand\slideleftmargin{0.7in}  % default margins are 0.5in
+    \renewcommand\sliderightmargin{0.5in}
+    \setlength\slidewidth{9.8in}
+    \renewcommand\slidetopmargin{0.5in}
+    \renewcommand\slidebottommargin{0.6in}
+    \setlength\slideheight{7.4in}
+    \slidesmag{5}                         % default is 4
+\fi
+\slideframe{none}
+\setlength\slideframewidth{0mm}
+\setlength\slideframesep{0in}
+
+\newlength\titleindent
+\setslidelength\titleindent{-0.3in}
+
+% Turn off vertical centering
+\centerslidesfalse
+
+
+
+%%%%%% COLORS & FONTS %%%%%%
+
+%\gdef\@bgcolor{white}
+%\gdef\@textcolor{black}
+%\gdef\@slidetitlecolor{black}
+%\gdef\@rulercolor{darkgray}
+\gdef\@bulletcolor{black}
+
+
+% phv: Adobe Helvetica
+% pag: Adobe Avant Garde
+% ptm: Adobe Times
+% pbk: Adobe Bookman
+
+%\newcommand{\@titlefont}{\usefont{T1}{pag}{b}{n}\large}
+%\newcommand{\@subtitlefont}{\usefont{T1}{pag}{m}{n}}
+%\newcommand{\@creditfont}{\relax} %{\usefont{T1}{pbk}{m}{n}}
+%\newcommand{\@slidetitlefont}{\usefont{T1}{pag}{b}{n}}
+
+\renewcommand\familydefault\sfdefault
+
+\newcommand\texttitle[1]{{\LARGE\bf #1}}
+\newcommand\textsubtitle[1]{{\Large\sl #1}}
+\newcommand\textauthor[1]{{\large #1}}
+\newcommand\textslidetitle[1]{{\Large\bf #1}}
+
+
+%%%%%% LOOK OF SLIDES %%%%%%
+
+\newif\ifcenterslidetitle
+\centerslidetitlefalse
+
+\newpagestyle{MH}%
+    {}%
+    {\hfil {\scriptsize \theslide}}
+\pagestyle{MH}
+
+% Add a bookmark for each master slide.
+% This is not working correctly yet.
+\newcommand\@addBookmarkOnSlide[1]{%
+    \def\Hy@temp{#1} 
+    \pdfmark{pdfmark=/OUT,
+        Raw={/Page \theslide /View [ /XYZ null null null ]
+        /Title (\expandafter\strip@prefix\meaning\Hy@temp)}}
+    }
+\newcommand\slideheading[1]{%
+    \ifnum\value{overlay}=0
+        \@addBookmarkOnSlide{#1}
+    \fi
+    \if#1\empty\relax
+    \else 
+        \ifcenterslidetitle
+            \begin{center}
+                \textslidetitle{#1\vspace{.5ex}}
+            \end{center}
+        \else
+            \hspace{\titleindent}%
+            \parbox{\textwidth}{%
+                \raggedright
+                \setlength{\baselineskip}{1.2\baselineskip}
+                \textslidetitle{#1\vspace{.5ex}}
+            }
+        \fi
+    \fi}
+\let\SH=\slideheading
+
+\newenvironment{coverslide}%
+    {\begin{slide}
+     \addtocounter{slide}{-1}
+     \slidepagestyle{empty}
+     \SH{}
+    }
+    {\end{slide}}
+
+
+%%%%%% OTHER ELEMENTS %%%%%%
+
+% Customize itemize labels
+%\renewcommand\labelitemi{\psframe[linecolor=\@bulletcolor,linewidth=0.5pt]%
+%   (-1.4ex,.1ex)(-0.2ex,1.3ex)}
+%\renewcommand\labelitemii{\pspolygon[linecolor=\@bulletcolor,linewidth=0.5pt]%
+%   (-1.2ex,0.1ex)(-1.2ex,1.1ex)(0ex,0.6ex)}
+%\renewcommand\labelitemi{\ding{122}}
+%\renewcommand\labelitemii{\ding{121}}
+%\renewcommand\labelitemiii{\ding{120}}
+\renewcommand\labelitemi{$\blacksquare$}
+\renewcommand\labelitemii{$\blacktriangleright$}
+\renewcommand\labelitemiii{}
+
+%\renewcommand\theenumi{%
+%   {\newcounter{local}\protect\setcounter{local}{201 + \the\value{enumi}}%
+%   \protect\ding{\value{local}}}}
+%\renewcommand\theenumii{%
+%   {\newcounter{locall}\protect\setcounter{locall}{191 + \the\value{enumii}}%
+%   \protect\ding{\value{locall}}}}
+%\renewcommand\labelenumi{\theenumi}
+%\renewcommand\labelenumii{\theenumii}
+
+
+%%%%%% OVERLAYS %%%%%%
+
+% From the additional macros in seminar.bg2 by Denis Girou.
+
+\newcommand\stackoverlays\SeminarCumulativeOverlays
+\newcommand\jumpoverlays\SeminarProgressiveOverlays
+\newcommand\overlaynext[1]{\SeminarNextOverlay{#1}}
+\newcommand\itemoverlays\SeminarItemInOverlay
+
+\ifprinthandout
+    \overlaysfalse
+\else
+    \stackoverlays
+\fi
+
+%%%%%% BACKGROUNDS %%%%%%
+
+\newcommand{\SeminarBackgroundImageAngle}{0}
+\newcommand{\SeminarBackgroundImageFile}{Undefined}
+\newlength\SeminarPaperWidth
+\newlength\SeminarPaperHeight
+\setslidelength\SeminarPaperWidth\paperheight
+\setslidelength\SeminarPaperHeight\paperwidth
+
+\newcommand\slidebgimage[2]{%
+    %\ifx#1\@empty
+    %   \ifx#2\@empty
+    %       \def\@imgdimen\relax
+    %   \else
+    %       \def\@imgdimen{,height=#2\SeminarPaperHeight}
+    %   \fi
+    %\else
+    %   \ifx#2\@empty
+    %       \def\@imgdimen{,width=#1\SeminarPaperWidth}
+    %   \else
+    %       \def\@imgdimen{,width=#1\SeminarPaperWidth,height=#2\SeminarPaperHeight}
+    %   \fi
+    %\fi
+    %
+    \SeminarNewSlideFrameBackground{SeminarBGImgT}{{%
+        \@tempdima=\SeminarPaperWidth
+        \divide\@tempdima\tw@
+        \@tempdimb=\SeminarPaperHeight
+        \divide\@tempdimb\tw@
+        \rput(\@tempdima,\@tempdimb){%
+            \includegraphics[angle=\SeminarBackgroundImageAngle, #1]{#2}}
+        }}
+    \SeminarSlideFrameBackground{SeminarBGImgT}}
+
+
+

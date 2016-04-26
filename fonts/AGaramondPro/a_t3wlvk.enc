@@ -1,0 +1,60 @@
+% THIS FILE WAS AUTOMATICALLY GENERATED -- DO NOT EDIT
+
+%%AutoEnc_t3wlvkkioqtpxqyq7r53jgtkya
+% Encoding created by otftotfm on Tue Apr  4 12:26:37 2006
+% Command line follows encoding
+/AutoEnc_t3wlvkkioqtpxqyq7r53jgtkya [
+%00
+  /fi /Euro.oldstyle /ffi /fl /fraction /dotaccent /hungarumlaut /ogonek
+  /ff /f_j /.notdef /T_h.swash /ffl /f_f_j /c_t /uniFB06
+%10
+  /dotlessi /.notdef /grave /acute /caron /breve /macron /ring
+  /cedilla /germandbls /ae /oe /oslash /AE /OE /Oslash.swash
+%20
+  /space /exclam /quotedbl /uniF650 /dollaroldstyle /uniF642 /ampersand /quoteright
+  /parenleft /parenright /asterisk /plus /comma /hyphen /period /slash
+%30
+  /zerooldstyle /oneoldstyle /twooldstyle /threeoldstyle /fouroldstyle /fiveoldstyle /sixoldstyle /sevenoldstyle
+  /eightoldstyle /nineoldstyle /colon /semicolon /less /equal /greater /question
+%40
+  /at /A.swash /B.swash /C.swash /D.swash /E.swash /F.swash /G.swash
+  /H.swash /I.swash /J.swash /K.swash /L.swash /M.swash /N.swash /O.swash
+%50
+  /P.swash /Q.swash /R.swash /S.swash /T.swash /U.swash /V.swash /W.swash
+  /X.swash /Y.swash /Z.swash /bracketleft /backslash /bracketright /circumflex /underscore
+%60
+  /quoteleft /a /b /c /d /e /f /g
+  /h /i /j /k /l /m /n /o
+%70
+  /p /q /r /s /t /u /v.swash /w
+  /x /y /z /braceleft /bar /braceright /tilde /dieresis
+%80
+  /Lslash.swash /quotesingle /quotesinglbase /uniF64F /quotedblbase /ellipsis /dagger /daggerdbl
+  /circumflex /uniF628 /Scaron.swash /guilsinglleft /OE /Zcaron.swash /asciicircum /minus
+%90
+  /lslash /quoteleft /quoteright /quotedblleft /quotedblright /bullet /endash /emdash
+  /tilde /trademark /scaron /guilsinglright /oe /zcaron /asciitilde /Ydieresis.swash
+%A0
+  /space /exclamdown /centoldstyle /uniF651 /currency /uniF652 /brokenbar /section
+  /dieresis /copyright /ordfeminine /guillemotleft /logicalnot /hyphen /registered /macron
+%B0
+  /degree /plusminus /twosuperior /threesuperior /acute /mu /paragraph /periodcentered
+  /cedilla /onesuperior /ordmasculine /guillemotright /onequarter /onehalf /threequarters /questiondown
+%C0
+  /Agrave.swash /Aacute.swash /Acircumflex.swash /Atilde.swash /Adieresis.swash /Aring.swash /AE /Ccedilla.swash
+  /Egrave.swash /Eacute.swash /Ecircumflex.swash /Edieresis.swash /Igrave.swash /Iacute.swash /Icircumflex.swash /Idieresis.swash
+%D0
+  /Eth.swash /Ntilde.swash /Ograve.swash /Oacute.swash /Ocircumflex.swash /Otilde.swash /Odieresis.swash /multiply
+  /Oslash.swash /Ugrave.swash /Uacute.swash /Ucircumflex.swash /Udieresis.swash /Yacute.swash /Thorn.swash /germandbls
+%E0
+  /agrave /aacute /acircumflex /atilde /adieresis /aring /ae /ccedilla
+  /egrave /eacute /ecircumflex /edieresis /igrave /iacute /icircumflex /idieresis
+%F0
+  /eth /ntilde /ograve /oacute /ocircumflex /otilde /odieresis /divide
+  /oslash /ugrave /uacute /ucircumflex /udieresis /yacute /thorn /ydieresis
+] def
+% Command line: 'otftotfm --encoding=ly1 --automatic
+% --map-file=AGaramondPro.map --coding-scheme=TEX TYPEWRITER AND WINDOWS
+% ANSI -fonum -fdlig -fswsh -fkern -fliga -fpnum --include-alternates
+% *.swash -faalt AGaramondPro-Italic.otf
+% LY1--AGaramondPro-Italic--onum-swsh'

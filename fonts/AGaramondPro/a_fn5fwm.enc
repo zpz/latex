@@ -1,0 +1,59 @@
+% THIS FILE WAS AUTOMATICALLY GENERATED -- DO NOT EDIT
+
+%%AutoEnc_fn5fwma4sjrp5g35lgllyo5u7c
+% Encoding created by otftotfm on Tue Apr  4 12:26:44 2006
+% Command line follows encoding
+/AutoEnc_fn5fwma4sjrp5g35lgllyo5u7c [
+%00
+  /Ssmall /Euro.oldstyle /.notdef /.notdef /fraction /Dotaccentsmall /Hungarumlautsmall /Ogoneksmall
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%10
+  /dotlessi /.notdef /Gravesmall /Acutesmall /Caronsmall /Brevesmall /Macronsmall /Ringsmall
+  /Cedillasmall /.notdef /AEsmall /OEsmall /Oslashsmall /AE /OE /Oslash
+%20
+  /space /exclamsmall /quotedbl /uniF650 /dollaroldstyle /uniF642 /ampersandsmall /quoteright
+  /parenleft /parenright /asterisk /plus /comma /hyphen /period /slash
+%30
+  /zerooldstyle /oneoldstyle /twooldstyle /threeoldstyle /fouroldstyle /fiveoldstyle /sixoldstyle /sevenoldstyle
+  /eightoldstyle /nineoldstyle /colon /semicolon /less /equal /greater /questionsmall
+%40
+  /at /A /B /C /D /E /F /G
+  /H /I /J /K /L /M /N /O
+%50
+  /P /Q /R /S /T /U /V /W
+  /X /Y /Z /bracketleft /backslash /bracketright /Circumflexsmall /underscore
+%60
+  /quoteleft /Asmall /Bsmall /Csmall /Dsmall /Esmall /Fsmall /Gsmall
+  /Hsmall /Ismall /Jsmall /Ksmall /Lsmall /Msmall /Nsmall /Osmall
+%70
+  /Psmall /Qsmall /Rsmall /Ssmall /Tsmall /Usmall /Vsmall /Wsmall
+  /Xsmall /Ysmall /Zsmall /braceleft /bar /braceright /Tildesmall /Dieresissmall
+%80
+  /Lslash /quotesingle /quotesinglbase /uniF64F /quotedblbase /ellipsis /dagger /daggerdbl
+  /circumflex /uniF628 /Scaron /guilsinglleft /OE /Zcaron /asciicircum /minus
+%90
+  /Lslashsmall /quoteleft /quoteright /quotedblleft /quotedblright /bullet /endash /emdash
+  /tilde /trademark /Scaronsmall /guilsinglright /oe /Zcaronsmall /asciitilde /Ydieresis
+%A0
+  /space /exclamdownsmall /centoldstyle /uniF651 /currency /uniF652 /brokenbar /section
+  /dieresis /copyright /ordfeminine /guillemotleft /logicalnot /hyphen /registered /macron
+%B0
+  /degree /plusminus /twosuperior /threesuperior /acute /mu /paragraph /periodcentered
+  /cedilla /onesuperior /ordmasculine /guillemotright /onequarter /onehalf /threequarters /questiondownsmall
+%C0
+  /Agrave /Aacute /Acircumflex /Atilde /Adieresis /Aring /AE /Ccedilla
+  /Egrave /Eacute /Ecircumflex /Edieresis /Igrave /Iacute /Icircumflex /Idieresis
+%D0
+  /Eth /Ntilde /Ograve /Oacute /Ocircumflex /Otilde /Odieresis /multiply
+  /Oslash /Ugrave /Uacute /Ucircumflex /Udieresis /Yacute /Thorn /.notdef
+%E0
+  /Agravesmall /Aacutesmall /Acircumflexsmall /Atildesmall /Adieresissmall /Aringsmall /ae /Ccedillasmall
+  /Egravesmall /Eacutesmall /Ecircumflexsmall /Edieresissmall /Igravesmall /Iacutesmall /Icircumflexsmall /Idieresissmall
+%F0
+  /Ethsmall /Ntildesmall /Ogravesmall /Oacutesmall /Ocircumflexsmall /Otildesmall /Odieresissmall /divide
+  /oslash /Ugravesmall /Uacutesmall /Ucircumflexsmall /Udieresissmall /Yacutesmall /Thornsmall /Ydieresissmall
+] def
+% Command line: 'otftotfm --encoding=ly1 --automatic
+% --map-file=AGaramondPro.map --coding-scheme=TEX TYPEWRITER AND WINDOWS
+% ANSI -fonum -fsmcp -fkern -fliga -fpnum --unicoding germandbls =: SSsmall
+% AGaramondPro-Regular.otf LY1--AGaramondPro-Regular--onum-smcp'
