@@ -1,0 +1,7 @@
+export TEXMFHOME=$HOME/usr/texmf
+export TEXMFCONFIG=$TEXMFHOME
+export TEXMFVAR=$TEXMFHOME
+# After changes to local texmf,
+# update the database by
+# $ texhash $TEXMFHOME
+
